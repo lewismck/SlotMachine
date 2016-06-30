@@ -1,0 +1,322 @@
+/* Adapted version of the cover theme for bootstrap http://getbootstrap.com/ */
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:focus {
+  color: white;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #009900;
+  border: 1px solid #fff;
+}
+.btn-default:hover{
+	background-color: white;
+	color: #333;
+}
+
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-color: #003300; /*#001133 #1E1E1E*/
+  font: 300 16px/22px "lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  color: #fff;
+  text-align: center;
+  min-height: 790px;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/* Custom text styles*/
+h1,
+h2,
+h3,
+h4{
+	font-weight: 300;
+}
+.title{
+	font: 300 32px/22px "raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+p,
+li{
+	color: rgba(255,255,255,.5);
+}
+a{
+	color: white;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*
+ * Images
+ */
+.masthead > img{
+	width: 30px;
+}
+img{
+	width: 240px;
+	height: 240px;
+	border: 2px solid black;
+	border-radius: 4px;
+  cursor: pointer;
+}
+img:hover{
+	opacity: 0.7;
+}
+.imgSmall{
+	height: 35px;
+	width: 35px;
+	border: 0px black;
+}
+#select.imgSmall{
+	border-bottom: 2px solid white;
+	border-radius: 0px;
+}
+#icon{
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+#icon:hover{
+	border-bottom: 2px solid;
+	border-radius: 0px;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+    -ms-transform: rotate(10deg); /* IE 9 */
+       -webkit-transform: rotate(10deg); /* Safari */
+       transform: rotate(10deg);
+}
+#smicon{
+	height: 32px;
+	width: 32px;
+	border: 0px black;
+}
+
+/*The JD generator box*/
+#jd{
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 5px 5px 5px 5px;
+  -webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+    animation: fadein 1.8s;
+    -moz-animation: fadein 1.8s; /* Firefox */
+    -webkit-animation: fadein 1.8s; /* Safari and Chrome */
+    -o-animation: fadein 1.8s; /* Opera */
+}
+
+/* Key Frames fade in */
+.inner{
+    animation: fadein 0.8s;
+    -moz-animation: fadein 0.8s; /* Firefox */
+    -webkit-animation: fadein 0.8s; /* Safari and Chrome */
+    -o-animation: fadein 0.8s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*
+ * Center aligned nav
+ */
+.in-nav{
+	float: center;
+}
+.in-nav > li {
+  display: inline-block;
+}
+.in-nav > li + li {
+  margin-left: 20px;
+}
+.in-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.in-nav > li > a:hover,
+.in-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.in-nav > .active > a,
+.in-nav > .active > a:hover,
+.in-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+	/*Causes errors on sceens that aren't tall enough*/
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
